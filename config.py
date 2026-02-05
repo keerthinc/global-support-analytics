@@ -13,4 +13,3 @@ SNOWFLAKE_CONFIG = {
     "schema": "SUPPORT"
 }
 
-

@@ -1,28 +1,42 @@
 # Global Support Analytics Automation
 
-This project automates Global Support KPI analysis using Python and Snowflake.
+## Overview
+This project automates **Global Support KPI analysis** using **Python, Snowflake, and Airflow**, and prepares analytics-ready outputs for **Tableau dashboards**.  
+It is designed to support **operational efficiency, SLA monitoring, and proactive risk detection** in a global customer support environment.
+
+The pipeline runs **daily**, calculates key support metrics, validates data quality, and publishes curated datasets for reporting and decision-making.
+
+---
+
+## Business Context
+Global Support teams operate across regions and time zones and are measured on **speed, quality, and reliability**.  
+This automation helps answer questions like:
+- Are we meeting SLA commitments?
+- Where is backlog building up?
+- Which regions or priorities are at risk?
+- How can we detect issues before SLA breaches occur?
+
+---
 
 ## KPIs Covered
-- SLA Adherence
-- First Response Time (FRT)
-- Mean Time to Resolution (MTTR)
-- Backlog & Aging Buckets
-- Case Volume Trends
+- **SLA Adherence (%)**
+- **First Response Time (FRT)**
+- **Mean Time to Resolution (MTTR)**
+- **Backlog (Open Cases)**
+- **Aging Buckets (0–24h, 24–72h, >72h)**
+- **Case Volume Trends**
+- **Operational Risk Indicators**
+
+---
 
 ## Tech Stack
-- Python (pandas, numpy)
-- Snowflake
-- SQLAlchemy
-- Tableau (for visualization)
+- **Python** (pandas, numpy)
+- **Snowflake** (cloud data warehouse)
+- **SQLAlchemy** (database connectivity)
+- **Airflow** (workflow orchestration)
+- **Tableau** (visualization & dashboards)
+- **GitHub** (version control)
 
-## How It Works
-1. Extracts support data from Snowflake
-2. Calculates KPIs
-3. Validates data quality
-4. Outputs aggregated datasets for Tableau
-5. Runs daily via scheduler
+---
 
-## How to Run
-```bash
-pip install -r requirements.txt
-python main.py
+## Project Architecture

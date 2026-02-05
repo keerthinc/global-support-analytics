@@ -1,6 +1,6 @@
-pandas==2.2.2
-numpy==1.26.4
-snowflake-connector-python==3.7.0
-snowflake-sqlalchemy
-sqlalchemy==2.0.25
-python-dotenv==1.0.1
+pandas==1.5.3
+numpy==1.23.5
+sqlalchemy==1.4.52
+snowflake-connector-python==3.5.0
+snowflake-sqlalchemy==1.5.1
+python-dotenv
